@@ -12,7 +12,7 @@ use yii\widgets\ActiveForm;
 
     <?php $form = ActiveForm::begin(); ?>
 
-    <?= $form->field($model, 'cmd')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'cmd')->label('PHP code')->textarea(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'async')->dropDownList(['0' => 'Sync', '1' => 'Async',]) ?>
 
