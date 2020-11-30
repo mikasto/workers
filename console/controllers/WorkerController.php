@@ -29,6 +29,7 @@ class WorkerController extends Controller
 				$output . "\n",
 				FILE_APPEND
 				);
+			$task = Task::findOne($id);
 			$task->done++;
 			$task->save();
 			echo "Worker end\n";
