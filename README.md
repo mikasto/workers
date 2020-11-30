@@ -1,8 +1,10 @@
 # Async PHP workers
 
 # Install
-Запустить "docker-compose up -d --build && docker-compose exec backend composer install && docker-compose exec backend /usr/local/bin/php yii migrate --interactive 0" внутри проекта
-
+Запустить в каталоге проекта: <br>
+ 
+<code>docker-compose up -d --build && docker-compose exec backend composer install && docker-compose exec backend /usr/local/bin/php yii migrate --interactive 0</code>
+ 
 # Use
 http://localhost:21080/task/index
 
